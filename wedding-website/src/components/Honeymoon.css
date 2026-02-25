@@ -1,0 +1,120 @@
+.honeymoon {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, var(--color-cream), var(--color-blue-light));
+  text-align: center;
+}
+
+.honeymoon-subtitle {
+  color: var(--color-text-light);
+  margin-bottom: 3rem;
+}
+
+.honeymoon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.honeymoon-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.honeymoon-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5px;
+}
+
+.honeymoon-blue::before {
+  background: linear-gradient(90deg, var(--color-blue), #8bb8d4);
+}
+
+.honeymoon-pink::before {
+  background: linear-gradient(90deg, var(--color-pink), var(--color-rose));
+}
+
+.honeymoon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+.honeymoon-card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.honeymoon-card-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-rose);
+  margin-bottom: 0.3rem;
+}
+
+.honeymoon-card-dest {
+  font-family: var(--font-accent);
+  font-size: 1.1rem;
+  color: var(--color-text);
+  margin-bottom: 0.3rem;
+}
+
+.honeymoon-card-dates {
+  font-size: 0.95rem;
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.honeymoon-card-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 1.2rem auto;
+}
+
+.honeymoon-card-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.honeymoon-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.honeymoon-tag {
+  background: var(--color-cream);
+  color: var(--color-text);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  transition: background 0.3s;
+}
+
+.honeymoon-blue .honeymoon-tag:hover {
+  background: var(--color-blue-light);
+}
+
+.honeymoon-pink .honeymoon-tag:hover {
+  background: var(--color-pink-light);
+}
+
+@media (max-width: 700px) {
+  .honeymoon-grid {
+    grid-template-columns: 1fr;
+  }
+}

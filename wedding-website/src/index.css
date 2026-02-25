@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Heebo:wght@300;400;500;700&family=Secular+One&display=swap');
+
+:root {
+  --color-cream: #fdf8f0;
+  --color-pink: #f0c4c8;
+  --color-pink-light: #fce4ec;
+  --color-yellow: #fde68a;
+  --color-yellow-light: #fef9e7;
+  --color-blue: #c5d8e8;
+  --color-blue-light: #e8f0f8;
+  --color-green: #b8d8ba;
+  --color-green-dark: #7a9e7e;
+  --color-text: #4a4a4a;
+  --color-text-light: #7a7a7a;
+  --color-gold: #c9a96e;
+  --color-rose: #d4838f;
+  --font-heading: 'Amatic SC', cursive;
+  --font-body: 'Heebo', sans-serif;
+  --font-accent: 'Secular One', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-cream);
+  line-height: 1.6;
+  direction: rtl;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink);
+  border-radius: 4px;
+}

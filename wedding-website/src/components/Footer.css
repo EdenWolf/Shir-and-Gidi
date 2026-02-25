@@ -1,0 +1,44 @@
+.footer {
+  padding: 3rem 2rem;
+  background: linear-gradient(180deg, var(--color-blue-light), var(--color-pink-light));
+  text-align: center;
+}
+
+.footer-flowers {
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  margin-bottom: 1.5rem;
+  opacity: 0.7;
+}
+
+.footer-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.footer-names {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-rose);
+}
+
+.footer-date {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+.footer-divider {
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 1rem auto;
+}
+
+.footer-love {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}

@@ -1,19 +1,21 @@
 import { useState } from 'react'
 import './Invitations.css'
 
+const BASE = import.meta.env.BASE_URL
+
 const invites = [
   {
-    src: './images/save-the-date.jpeg',
+    src: `${BASE}images/save-the-date.jpeg`,
     title: 'Save the Date',
     subtitle: 'שמרו את התאריך!',
   },
   {
-    src: './images/henna.jpeg',
+    src: `${BASE}images/henna.jpeg`,
     title: 'הזמנה לחינה',
     subtitle: '12.03.2026 | ״הבית של פרח״, באר שבע',
   },
   {
-    src: './images/wedding-invite.jpeg',
+    src: `${BASE}images/wedding-invite.jpeg`,
     title: 'הזמנה לחתונה',
     subtitle: '29.03.2026 | אולם דוריה, שדה יואב',
   },
